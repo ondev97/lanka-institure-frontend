@@ -30,7 +30,7 @@ export default function Home() {
       <div className="uppercover">
         <div className="cov_text">
           <h1>
-            SFT<span className="blackhe">Lanka</span>
+            LANKA<span className="blackhe"> INSTITUTE</span>
             <br />
             <span>පිටවීම සරසවියට පමණයි</span>
           </h1>
@@ -38,7 +38,7 @@ export default function Home() {
             වැඩිම සිසුන් ගණනකට A සාමාර්ථ හා සරසවි වරම් දුන් ශ්‍රී ලංකාවේ අංක 1
             තාක්ෂණවේදය සදහා විද්‍යාව (Science For Technology - SFT) ගුරුවරයා.
           </p>
-          <h2>ප්‍රදීප් S දිසානායක</h2>
+
           <div className="button">
             <Link
               to="//chat.whatsapp.com/G7RThgkNVOjHd7lBUH4ssw"
