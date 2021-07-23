@@ -128,11 +128,17 @@ export default function Header({ acDetails }) {
                 <Link to="/contact">CONTACT US</Link>
               </li> */}
                 <li>
-                  <Link to="#">STUDENT'S GUIDE</Link>
+                  <Link to="#">ALL COURSES</Link>
                 </li>
                 <li>
-                  <Link to="#">EXAM RESULTS</Link>
+                  <Link to="/freeclasses">FREE COURSES</Link>
                 </li>
+                <li>
+                  <Link to="#">PAID COURSES</Link>
+                </li>
+                {/* <li>
+                  <Link to="#">ALL INSTRUCTORS</Link>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -158,11 +164,17 @@ export default function Header({ acDetails }) {
                     <li>HOME</li>
                   </Link>
                   <Link to="#">
-                    <li>STUDENT'S GUIDE</li>
+                    <li>ALL COURSES</li>
+                  </Link>
+                  <Link to="/freeclasses">
+                    <li>FREE COURSES</li>
                   </Link>
                   <Link to="#">
-                    <li>EXAM RESULTS</li>
+                    <li>PAID COURSES</li>
                   </Link>
+                  {/* <Link to="#">
+                    <li>ALL INSTRUCTORS</li>
+                  </Link> */}
                 </ul>
                 <div className="butham">{headerProPic()}</div>
               </div>

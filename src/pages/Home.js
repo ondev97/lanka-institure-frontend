@@ -9,8 +9,8 @@ import imgSec1 from "../img/1.png";
 import imgSec2 from "../img/2.png";
 import imgSec3 from "../img/3.png";
 import imgSec4 from "../img/4.png";
-import telegram from "../img/telegram.png";
-import phone from "../img/phone.png";
+import sl from "../img/sl.png";
+import usa from "../img/usa.png";
 import LoginForm from "../components/LoginForm";
 import { Link } from "react-router-dom";
 
@@ -32,29 +32,22 @@ export default function Home() {
           <h1>
             LANKA<span className="blackhe"> INSTITUTE</span>
             <br />
-            <span>පිටවීම සරසවියට පමණයි</span>
           </h1>
           <p>
-            වැඩිම සිසුන් ගණනකට A සාමාර්ථ හා සරසවි වරම් දුන් ශ්‍රී ලංකාවේ අංක 1
-            තාක්ෂණවේදය සදහා විද්‍යාව (Science For Technology - SFT) ගුරුවරයා.
+            To provide a trusted and professional e-learning service using best
+            tools possible with integrity focusing the virtual safety of
+            students and keeping the parent/guardian informed on the
+            interactions.
           </p>
-
-          <div className="button">
-            <Link
-              to="//chat.whatsapp.com/G7RThgkNVOjHd7lBUH4ssw"
-              target="_blank"
-            >
-              <div className="buttele">
-                <img src={phone} alt="phone" />
-                0716588634
-              </div>
-            </Link>
-            <Link to="//t.me/joinchat/UUNOywKbLc5RWPrh" target="_blank">
-              <div className="buttele">
-                <img src={telegram} alt="telegram" />
-                Telegram Channel
-              </div>
-            </Link>
+          <div className="country_but">
+            <div className="column">
+              <img src={sl} alt="Sri Lanka" />
+              <h2>SRI LANKA</h2>
+            </div>
+            <div className="column">
+              <img src={usa} alt="USA" />
+              <h2>UNITED STATES</h2>
+            </div>
           </div>
         </div>
         {!accountDetails.key ? <LoginForm /> : ""}
@@ -67,31 +60,31 @@ export default function Home() {
           <div className="wr">
             <div className="counter_colu">
               <Link to="/freeclasses">
+                <h2>FREE RECORDED COURSES</h2>
                 <div className="img_sec">
                   <img src={imgSec4} />
                 </div>
-                <h2>UPCOMING CLASS : 2021.07.05 | 04 PM</h2>
               </Link>
             </div>
             <div className="counter_colu">
               <Link to="/freeclasses">
+                <h2>FREE LIVE COURSES</h2>
                 <div className="img_sec">
                   <img src={imgSec2} />
                 </div>
-                <h2>UPCOMING CLASS : 2021.07.05 | 04 PM</h2>
               </Link>
             </div>
             <div className="counter_colu">
+              <h2>PAID RECORDED COURSES</h2>
               <div className="img_sec">
                 <img src={imgSec3} />
               </div>
-              <h2>UPCOMING CLASS : 2021.07.05 | 04 PM</h2>
             </div>
             <div className="counter_colu">
+              <h2>PAID LIVE COURSES</h2>
               <div className="img_sec">
                 <img src={imgSec1} />
               </div>
-              <h2>UPCOMING CLASS : 2021.07.05 | 04 PM</h2>
             </div>
           </div>
         </div>

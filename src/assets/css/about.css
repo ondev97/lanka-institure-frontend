@@ -2,7 +2,7 @@
   width: 100%;
   padding: 60px 20px;
   background-image: linear-gradient(to top, #f8fbff, #f4f9ff, #f1f8ff);
-  font-family: "Open Sans", sans-seri;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 .maininde .upper_cover h1 {
@@ -11,7 +11,7 @@
   color: var(--h1Fontcolor);
 }
 .maininde .body_sec {
-  font-family: "Open Sans", sans-seri;
+  font-family: "Poppins", sans-serif;
   width: 1000px;
   margin: 80px auto;
   display: flex;

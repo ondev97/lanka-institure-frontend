@@ -31,37 +31,12 @@ export default function ValidateSignUp(values) {
   } else if (!pattern.test(values.email)) {
     errors.email = "Please Enter Valid Email";
   }
-  if (!values.address.trim()) {
-    errors.address = "Address Is Required";
-  } else {
-    if (values.address.length >= 255) {
-      errors.address = "Address Must Be Less Than 255 Characters";
-    }
-  }
-  if (values.district === "") {
-    errors.district = "Please Select District";
-  }
   if (!values.phonenumber.trim()) {
     errors.phonenumber = "Phone Number is Required";
   } else if (isNaN(values.phonenumber)) {
     errors.phonenumber = "Please Insert Valied Phone Number";
   } else if (values.phonenumber.length > 12) {
     errors.phonenumber = "Phone Number Must Be Less Than 12 characters";
-  }
-  if (!values.telegram_number.trim()) {
-    errors.telegram_number = "Telegram Number is Required";
-  } else if (isNaN(values.telegram_number)) {
-    errors.telegram_number = "Please Insert Valied Telegram Number";
-  } else if (values.telegram_number.length > 12) {
-    errors.telegram_number = "Telegram Number Must Be Less Than 12 characters";
-  }
-  if (!values.parent_number.trim()) {
-    errors.parent_number = "Parent Phone Number is Required";
-  } else if (isNaN(values.parent_number)) {
-    errors.parent_number = "Please Insert Valied Parent Phone Number";
-  } else if (values.parent_number.length > 12) {
-    errors.parent_number =
-      "Parent Phone Number Must Be Less Than 12 characters";
   }
   if (!values.pw.trim()) {
     errors.pw = "Password Is Required";

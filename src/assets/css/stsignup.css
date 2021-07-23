@@ -2,10 +2,26 @@
 .regi_ins {
   width: 48%;
   flex: 1;
-  font-family: "Open Sans", sans-seri;
+  font-family: "Poppins", sans-serif;
   border-radius: 10px;
   overflow: hidden;
   margin-right: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.regi_ins .image_login {
+  margin-bottom: 20px;
+}
+.regi_ins .image_content {
+  width: 80%;
+}
+.regi_ins .image_content h3 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 .regi_ins .regi_head {
   width: 100%;
@@ -39,12 +55,12 @@
   width: 100%;
   min-height: calc(100vh - 117px);
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .siup_body .siup_column {
-  flex: 0.6;
+  flex: 0.5;
   display: flex;
   justify-content: center;
   padding: 60px 0;
@@ -62,18 +78,16 @@
   height: 100%;
 }
 .siup_body .siup_column:nth-child(2) {
-  padding: 60px 30px;
   order: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fdfdfd;
-  flex: 0.4;
-  min-height: calc(100vh - 61px);
+  flex: 0.5;
 }
 .siup_body .siup_column .siup_form {
-  width: 70%;
-  font-family: "Open Sans", sans-seri;
+  width: 80%;
+  font-family: "Poppins", sans-serif;
   border-radius: 3px;
   padding: 0;
   border-radius: 10px;
@@ -104,21 +118,18 @@
   color: var(--h1Fontcolor);
 }
 .siup_body .siup_column .siup_form .sect:nth-child(1),
-.siup_form .sect:nth-child(6),
-.sect:nth-child(5) {
+.sect:nth-child(4) {
   display: flex;
 }
 .siup_body .siup_column .siup_form .sect:nth-child(1) p,
-.siup_form .sect:nth-child(6) p,
-.sect:nth-child(5) p {
+.sect:nth-child(4) p {
   flex: 1;
 }
 .siup_body .siup_column .siup_form .sect p {
   position: relative;
 }
 .siup_body .siup_column .siup_form .sect:nth-child(1) p:nth-child(1),
-.siup_form .sect:nth-child(5) p:nth-child(1),
-.sect:nth-child(6) p:nth-child(1) {
+.sect:nth-child(4) p:nth-child(1) {
   margin-right: 20px;
 }
 .siup_body .siup_column .siup_form input,

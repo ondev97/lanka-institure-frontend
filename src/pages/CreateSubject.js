@@ -77,6 +77,7 @@ export default function CreateSubject() {
       .then((res) => {
         setuploading(false);
         //showing alert
+        console.log(res);
         store.addNotification({
           title: "Subject Created!",
           message: process.env.REACT_APP_LMS_ALERT_NAME,

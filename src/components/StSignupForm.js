@@ -103,69 +103,6 @@ export default function StSignupForm() {
               </span>
             )}
           </p>
-          <p>
-            <label htmlFor="em">Address</label>
-            <input
-              type="text"
-              name="address"
-              id="em"
-              value={values.address}
-              onChange={hadelChanege}
-              className={errors.address ? "error" : ""}
-              onFocus={hideError}
-            />
-            {errors.address && (
-              <span className={`tip ${hide.address ? "hidetip" : ""}`}>
-                {errors.address}
-              </span>
-            )}
-          </p>
-        </div>
-        <div className="sect">
-          <p>
-            <label htmlFor="em">District</label>
-            <select
-              type="text"
-              name="district"
-              id="pn"
-              value={values.district}
-              onChange={hadelChanege}
-              className={errors.district ? "error" : ""}
-              onFocus={hideError}
-            >
-              <option value="">Select District</option>
-              <option value="Gampaha">Gampaha</option>
-              <option value="Colombo">Colombo</option>
-              <option value="Kalutara">Kalutara</option>
-              <option value="Jaffna">Jaffna</option>
-              <option value="Kilinochchi">Kilinochchi</option>
-              <option value="Mannar">Mannar</option>
-              <option value="Mullaitivu">Mullaitivu</option>
-              <option value="Vavuniya">Vavuniya</option>
-              <option value="Puttalam">Puttalam</option>
-              <option value="Kurunegala">Kurunegala</option>
-              <option value="Anuradhapura">Anuradhapura</option>
-              <option value="Polonnaruwa">Polonnaruwa</option>
-              <option value="Matale">Matale</option>
-              <option value="Kandy">Kandy</option>
-              <option value="Nuwara">Nuwara Eliya</option>
-              <option value="Kegalle">Kegalle</option>
-              <option value="Ratnapura">Ratnapura</option>
-              <option value="Trincomalee">Trincomalee</option>
-              <option value="Batticaloa">Batticaloa</option>
-              <option value="Ampara">Ampara</option>
-              <option value="Badulla">Badulla</option>
-              <option value="Monaragala">Monaragala</option>
-              <option value="Hambantota">Hambantota</option>
-              <option value="Matara">Matara</option>
-              <option value="Galle">Galle</option>
-            </select>
-            {errors.district && (
-              <span className={`tip ${hide.district ? "hidetip" : ""}`}>
-                {errors.district}
-              </span>
-            )}
-          </p>
         </div>
         <div className="sect">
           <p>
@@ -182,42 +119,6 @@ export default function StSignupForm() {
             {errors.phonenumber && (
               <span className={`tip ${hide.phonenumber ? "hidetip" : ""}`}>
                 {errors.phonenumber}
-              </span>
-            )}
-          </p>
-        </div>
-        <div className="sect">
-          <p>
-            <label htmlFor="em">Telegram Number</label>
-            <input
-              type="text"
-              name="telegram_number"
-              id="pn"
-              value={values.tpn}
-              onChange={hadelChanege}
-              className={errors.telegram_number ? "error" : ""}
-              onFocus={hideError}
-            />
-            {errors.telegram_number && (
-              <span className={`tip ${hide.telegram_number ? "hidetip" : ""}`}>
-                {errors.telegram_number}
-              </span>
-            )}
-          </p>
-          <p>
-            <label htmlFor="em">Parent Phone Number</label>
-            <input
-              type="text"
-              name="parent_number"
-              id="pn"
-              value={values.parent_pn}
-              onChange={hadelChanege}
-              className={errors.parent_number ? "error" : ""}
-              onFocus={hideError}
-            />
-            {errors.parent_number && (
-              <span className={`tip ${hide.parent_number ? "hidetip" : ""}`}>
-                {errors.parent_number}
               </span>
             )}
           </p>

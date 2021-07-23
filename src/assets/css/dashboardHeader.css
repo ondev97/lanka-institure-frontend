@@ -11,7 +11,7 @@
 .logo h1 {
   font-size: 22px;
   white-space: nowrap;
-  font-family: "Open Sans", sans-seri;
+  font-family: "Poppins", sans-serif;
   color: var(--h1Fontcolor);
 }
 .logo img {

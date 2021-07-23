@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-family: "Open Sans", sans-seri;
+  font-family: "Poppins", sans-serif;
 }
 .models .md_all_models {
   flex: 0.7;

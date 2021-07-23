@@ -5,7 +5,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   top: 0;
   background-color: #f9f9f9;
   z-index: 2000;
@@ -29,13 +29,13 @@ nav .column .hlogo h1 span {
   color: #5e17eb;
 }
 nav .column .hlogo img {
-  width: 180px;
+  width: 220px;
 }
 nav .column:nth-child(2) {
   flex: 2;
 }
 nav .column:nth-child(2) .navigation ul {
-  width: 80%;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -43,10 +43,9 @@ nav .column:nth-child(2) .navigation ul {
 }
 nav .column:nth-child(2) .navigation ul li {
   position: relative;
-  flex: 0.3;
   margin: 0 10px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   text-align: center;
   white-space: nowrap;

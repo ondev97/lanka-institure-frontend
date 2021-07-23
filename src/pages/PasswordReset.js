@@ -80,10 +80,6 @@ export default function PasswordReset() {
         <div className="login_form" style={{ padding: "25px 0" }}>
           <div className="topSign">
             <h2>Password Reset</h2>
-            <p>
-              Password Reset කිරීම සදහා ඔබගේ Student Account සාදා ඇති Email
-              ලිපිනය නිවැරදිව ඇතුලත් කරන්න.
-            </p>
           </div>
           <form>
             <p>
@@ -117,11 +113,10 @@ export default function PasswordReset() {
         </div>
         <div className="image_content">
           <h3>
-            SFTLANKA Student Account සදහා Log වීමට ප්‍රථම ඔබ SFTLANKA හි
-            ලියාපදිංචි විය යුතුය. ඒ සදහා ඔබගේ අනන්‍යතාවය ගුරුවරයා වෙත තහවුරු කර
-            ඔබගේ student account සදහා අදාල Username සහ Password ලබාගන්න.
-            SFTLANKA Student Accounts හි කුමන හෝ තාක්ෂණික ගැටළුවක් පවතීනම් එය
-            නිරාකරණය කරගැනීම සදහා ඔබගේ ගුරුවරයා සම්බන්ද කරගන්න.
+            To provide a trusted and professional e-learning service using best
+            tools possible with integrity focusing the virtual safety of
+            students and keeping the parent/guardian informed on the
+            interactions.
           </h3>
         </div>
       </div>

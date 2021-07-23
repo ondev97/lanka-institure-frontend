@@ -77,6 +77,15 @@ function LoginForm() {
                 </span>
               )}
             </p>
+            <p className="showpw">
+              <input
+                type="checkbox"
+                name="showPw"
+                id="showpw"
+                onChange={showPassword}
+              />
+              <label htmlFor="showpw">Show Password</label>
+            </p>
             <div className="butSec">
               <button>Login</button>
               <p>Forget Password</p>

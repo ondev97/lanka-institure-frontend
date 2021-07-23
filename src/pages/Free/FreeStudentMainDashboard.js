@@ -93,7 +93,7 @@ export default function FreeStudentMainDashboard() {
             </InfiniteScroll>
           </div>
         ) : (
-          <Empty target="No Enrolled Subjects" />
+          <Empty target="No Free Class" />
         )}
         {isLoading && <ProfileLoader />}
       </div>

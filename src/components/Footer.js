@@ -5,7 +5,14 @@ import "../assets/css/mediaFiles/footermedia.css";
 import ftimg from "../img/Logo_1.png";
 
 export default function Footer() {
-  if (useLocation().pathname === "/") {
+  let location = useLocation().pathname;
+  console.log(location);
+  if (
+    location === "/" ||
+    location === "/stlogin" ||
+    location === "/stsignup" ||
+    location === "/passwordreset"
+  ) {
     return "";
   }
   return (
@@ -17,9 +24,10 @@ export default function Footer() {
           </div>
           <div className="ab">
             <p>
-              ශ්‍රී ලාංකීය දු දරුවන්ගේ අධ්‍යාපනය වෙනුවෙන් නිරතුරුවම කැපවුන
-              SFTLANKA හරහා ඔබගේ විෂයට අදාල ලංකාවේ ප්‍රවීන ගුරුවරුන් සමග සම්බන්ද
-              වෙමින් නිවසේ සිට සුරක්ෂිතව අධ්‍යාපන කටයුතු සිදු කරන්න.
+              To provide a trusted and professional e-learning service using
+              best tools possible with integrity focusing the virtual safety of
+              students and keeping the parent/guardian informed on the
+              interactions.
             </p>
           </div>
         </div>
@@ -50,23 +58,20 @@ export default function Footer() {
               <Link to="/contact">Contact Us</Link>
             </li> */}
             <li>
-              <Link to="#">Guidelines</Link>
+              <Link to="#">Student Guide</Link>
             </li>
             <li>
-              <Link to="#">Our Features</Link>
+              <Link to="#">All Courses</Link>
             </li>
             <li>
-              <Link to="/allteachers">Teachers</Link>
-            </li>
-            <li>
-              <Link to="/allsubjects">Subjects</Link>
+              <Link to="/allteachers">All Instructors</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="small_footer">
         <h3>
-          COPYRIGHT © SFTLANKA | PROUDLY POWERED BY
+          COPYRIGHT © LANKA INSTITUTE | PROUDLY POWERED BY
           <span>
             {
               <Link to="//helamid.com" target="_blank">
