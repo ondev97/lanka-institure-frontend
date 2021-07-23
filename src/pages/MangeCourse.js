@@ -144,7 +144,7 @@ export default function MangeCourse() {
                 dataLength={subDetails.length}
                 next={next}
                 hasMore={true}
-                className="course_body list_view"
+                className="course_body"
               >
                 {subDetails.map((det) => (
                   <TcMaCourses

@@ -74,7 +74,7 @@ export default function FreeStudentMainDashboard() {
             <InfiniteScroll
               dataLength={subDetails.length}
               hasMore={true}
-              className="all_sub_body list_view_st"
+              className="all_sub_body"
             >
               {subDetails.map((det) => (
                 <FreeMySubjectsCard

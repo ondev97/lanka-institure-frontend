@@ -146,7 +146,7 @@ export default function FreeStSubCourses() {
                 dataLength={courseData.length}
                 next={next}
                 hasMore={true}
-                className="st_manage_course_grid st_lists"
+                className="st_manage_course_grid"
               >
                 {courseData.length !== 0
                   ? courseData.map((cdata, index) => (

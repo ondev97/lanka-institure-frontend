@@ -81,7 +81,7 @@ export default function StudentMainDashboard() {
             <InfiniteScroll
               dataLength={subDetails.length}
               hasMore={true}
-              className="all_sub_body list_view_st"
+              className="all_sub_body"
             >
               {subDetails.map((det) => (
                 <MySubjectsCard

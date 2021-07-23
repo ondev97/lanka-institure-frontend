@@ -124,7 +124,7 @@ export default function StAllSubjects() {
               dataLength={subDetails.length}
               next={next}
               hasMore={true}
-              className="all_sub_body list_view_st"
+              className="all_sub_body"
             >
               {subDetails.map((det) => (
                 <SubjectsCard
