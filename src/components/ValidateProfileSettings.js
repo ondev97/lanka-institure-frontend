@@ -24,9 +24,6 @@ export default function validation(values) {
   ) {
     errors.userName = "User Name Must Not Be Contain Special Characters";
   }
-  if (values.district === "") {
-    errors.district = "Please Select District";
-  }
   if (!values.email.trim()) {
     errors.email = "Email is Required";
   } else if (values.email.length > 35) {
@@ -40,29 +37,6 @@ export default function validation(values) {
     errors.phoneNumber = "Phone Number Must Be 12 characters";
   } else if (isNaN(values.phoneNumber)) {
     errors.phoneNumber = "Please Enter Valid Phone Number";
-  }
-  if (!values.parent_number.trim()) {
-    errors.parent_number = "Parent Phone Number Is Required";
-  } else if (values.parent_number.length > 12) {
-    errors.parent_number = "Parent Phone Number Must Be 12 characters";
-  } else if (isNaN(values.parent_number)) {
-    errors.parent_number = "Please Enter Valid Parent Phone Number";
-  }
-  if (!values.telegram_number.trim()) {
-    errors.telegram_number = "Telegram Number Is Required";
-  } else if (values.telegram_number.length > 12) {
-    errors.telegram_number = "Telegram Number Must Be 12 characters";
-  } else if (isNaN(values.telegram_number)) {
-    errors.telegram_number = "Please Enter Valid Telegram Number";
-  }
-  if (values.address === null) {
-    errors.address = "Address Is Required";
-  } else {
-    if (!values.address.trim()) {
-      errors.address = "Address Is Required";
-    } else if (values.address.length > 255) {
-      errors.address = "Address Must Be Less Than 255 characters";
-    }
   }
   if (values.des !== null) {
     if (values.des.trim()) {

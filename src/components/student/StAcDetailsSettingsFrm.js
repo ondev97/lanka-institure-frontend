@@ -81,40 +81,6 @@ export default function StAcDetailsSettingsFrm({
           </p>
         </div>
         <div className="sectpr">
-          <p style={{ marginRight: "15px" }}>
-            <label htmlFor="pn">Parent Phone Number</label>
-            <input
-              type="text"
-              id="un"
-              name="parent_number"
-              value={values.parent_number || ""}
-              onChange={hadelChange}
-              onFocus={hideError}
-            />
-            {errors.parent_number && (
-              <span className={`tip ${hide.parent_number ? "hidetip" : ""}`}>
-                {errors.parent_number}
-              </span>
-            )}
-          </p>
-          <p>
-            <label htmlFor="pn">Telegram Number</label>
-            <input
-              type="text"
-              id="pn"
-              name="telegram_number"
-              value={values.telegram_number || ""}
-              onChange={hadelChange}
-              onFocus={hideError}
-            />
-            {errors.telegram_number && (
-              <span className={`tip ${hide.telegram_number ? "hidetip" : ""}`}>
-                {errors.telegram_number}
-              </span>
-            )}
-          </p>
-        </div>
-        <div className="sectpr">
           <p>
             <label htmlFor="ad">Email</label>
             <input
@@ -146,51 +112,6 @@ export default function StAcDetailsSettingsFrm({
             {errors.address && (
               <span className={`tip ${hide.address ? "hidetip" : ""}`}>
                 {errors.address}
-              </span>
-            )}
-          </p>
-        </div>
-        <div className="sectpr">
-          <p>
-            <label htmlFor="dist">District</label>
-            <select
-              type="text"
-              id="dist"
-              name="district"
-              value={values.district || ""}
-              onChange={hadelChange}
-              onFocus={hideError}
-            >
-              <option value="">Select District</option>
-              <option value="Gampaha">Gampaha</option>
-              <option value="Colombo">Colombo</option>
-              <option value="Kalutara">Kalutara</option>
-              <option value="Jaffna">Jaffna</option>
-              <option value="Kilinochchi">Kilinochchi</option>
-              <option value="Mannar">Mannar</option>
-              <option value="Mullaitivu">Mullaitivu</option>
-              <option value="Vavuniya">Vavuniya</option>
-              <option value="Puttalam">Puttalam</option>
-              <option value="Kurunegala">Kurunegala</option>
-              <option value="Anuradhapura">Anuradhapura</option>
-              <option value="Polonnaruwa">Polonnaruwa</option>
-              <option value="Matale">Matale</option>
-              <option value="Kandy">Kandy</option>
-              <option value="Nuwara">Nuwara Eliya</option>
-              <option value="Kegalle">Kegalle</option>
-              <option value="Ratnapura">Ratnapura</option>
-              <option value="Trincomalee">Trincomalee</option>
-              <option value="Batticaloa">Batticaloa</option>
-              <option value="Ampara">Ampara</option>
-              <option value="Badulla">Badulla</option>
-              <option value="Monaragala">Monaragala</option>
-              <option value="Hambantota">Hambantota</option>
-              <option value="Matara">Matara</option>
-              <option value="Galle">Galle</option>
-            </select>
-            {errors.district && (
-              <span className={`tip ${hide.district ? "hidetip" : ""}`}>
-                {errors.district}
               </span>
             )}
           </p>

@@ -35,18 +35,6 @@ export default function AboutStUser() {
             <h3>Address</h3>
             <h4>{initialState && initialState.user.address}</h4>
           </div>
-          <div className="ab_card">
-            <h3>District</h3>
-            <h4>{initialState && initialState.user.district}</h4>
-          </div>
-          <div className="ab_card">
-            <h3>Parent Phone Number</h3>
-            <h4>{initialState && initialState.user.parent_number}</h4>
-          </div>
-          <div className="ab_card">
-            <h3>Telegram Number</h3>
-            <h4>{initialState && initialState.user.telegram_number}</h4>
-          </div>
         </div>
         <div className="disdis">
           <p>

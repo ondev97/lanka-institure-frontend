@@ -30,9 +30,6 @@ export default function StProfileSettings({ setsettings }) {
     all_data.append("last_name", values.lastName);
     all_data.append("username", values.userName);
     all_data.append("phone_no", values.phoneNumber);
-    all_data.append("parent_number", values.parent_number);
-    all_data.append("telegram_number", values.telegram_number);
-    all_data.append("district", values.district);
     all_data.append("email", values.email);
     all_data.append("address", values.address);
     all_data.append("password", values.pw);
