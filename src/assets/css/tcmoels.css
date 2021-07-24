@@ -451,7 +451,7 @@
   padding: 12px 5px 12px 12px;
   border-bottom: 1px solid #ccc;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 550;
   transition: 0.3s ease;
   font-size: 13px;
 }
@@ -571,12 +571,14 @@
   color: var(--h1Fontcolor);
   font-size: 17px;
   margin-top: 15px;
+  font-weight: 600;
   text-transform: capitalize;
 }
 .models .md_course_desc .course_desc_body .card_of_course .course_detail h3 {
   font-size: 12px;
   color: #777;
   padding-bottom: 8px;
+  font-weight: 500;
 }
 .models
   .md_course_desc
@@ -586,7 +588,7 @@
   .course_short_desc
   h3 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .models .md_course_desc .course_desc_body .course_short_desc {
   max-height: 28vh;

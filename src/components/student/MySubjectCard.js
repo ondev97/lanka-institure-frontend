@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ReactTimeAgo from "react-time-ago/commonjs/ReactTimeAgo";
 
 export default function MySubjectsCard({
   id,
@@ -45,7 +46,7 @@ export default function MySubjectsCard({
             </ul>
           </div>
         </div>
-        {/* <div className="sub_card_row">
+        <div className="sub_card_row">
           <h3>
             By:
             {author.user.first_name && author.user.last_name
@@ -57,7 +58,7 @@ export default function MySubjectsCard({
               <ReactTimeAgo date={Date.parse(created_at)} locale="en-US" />
             </h3>
           </div>
-        </div> */}
+        </div>
       </Link>
     </div>
   );

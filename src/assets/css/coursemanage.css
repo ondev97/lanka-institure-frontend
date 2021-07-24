@@ -175,6 +175,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
+  padding: 0 10px;
 }
 .main_ar_course .course_body .course_card .cscard_body .cscard_mid h3 {
   font-size: 12px;

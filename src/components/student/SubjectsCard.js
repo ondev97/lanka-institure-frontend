@@ -50,7 +50,7 @@ export default function SubjectsCard({
             </ul>
           </div>
         </div>
-        {/* <div className="sub_card_row">
+        <div className="sub_card_row">
           <h3>
             By:
             {author.user.first_name && author.user.last_name
@@ -62,7 +62,7 @@ export default function SubjectsCard({
               <ReactTimeAgo date={Date.parse(created_at)} locale="en-US" />
             </h3>
           </div>
-        </div> */}
+        </div>
       </Link>
     </div>
   );

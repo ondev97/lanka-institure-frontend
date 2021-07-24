@@ -78,7 +78,7 @@ export default function TcMaCourses({
             </div>
           </div>
         </div>
-        {/* <div className="cscard_bottom">
+        <div className="cscard_bottom">
           <h4>
             By:
             {author.user.first_name && author.user.last_name
@@ -90,7 +90,7 @@ export default function TcMaCourses({
               <ReactTimeAgo date={Date.parse(created_at)} locale="en-US" />
             </h4>
           )}
-        </div> */}
+        </div>
       </Link>
     </div>
   );
