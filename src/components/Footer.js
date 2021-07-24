@@ -6,7 +6,6 @@ import ftimg from "../img/Logo_1.png";
 
 export default function Footer() {
   let location = useLocation().pathname;
-  console.log(location);
   if (
     location === "/stlogin" ||
     location === "/stsignup" ||
