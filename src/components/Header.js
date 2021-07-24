@@ -33,6 +33,9 @@ export default function Header({ acDetails }) {
     "/passwordreset",
     "/guidelines",
     "/features",
+    "/freeclasses",
+    "/freesubcources",
+    "/freemodule",
   ];
 
   const hambutton = () => {
