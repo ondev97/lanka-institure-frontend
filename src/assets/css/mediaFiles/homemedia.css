@@ -2,9 +2,7 @@
   .maininde .cards_section {
     width: 95%;
   }
-  .maininde .get_start_sec .main_get_start {
-    width: 95%;
-  }
+
   .maininde .popular_subjects .main_container_co {
     width: 100%;
   }
@@ -16,22 +14,17 @@
   .maininde .get_start_sec .main_get_start .get_start_column {
     flex: 0.5;
   }
-  .maininde .get_start_sec .main_get_start {
-    flex-direction: column;
-  }
-  .maininde .get_start_sec .main_get_start .get_start_column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .maininde .get_start_sec .main_get_start .get_start_column img {
-    width: 400px;
-  }
   .line h1 {
     width: 90%;
   }
   .maininde .uppercover .cov_text {
     padding: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .simple_card_sec .card_sec_main .card {
+    flex: initial;
+    flex-basis: 300px;
   }
 }
 @media screen and (max-width: 820px) {
@@ -63,8 +56,8 @@
   .maininde .uppercover .cov_img {
     flex-basis: auto;
   }
-  .maininde .get_start_sec {
-    padding: 0;
+  .maininde .get_start_sec .main_get_start {
+    flex-wrap: wrap;
   }
   .maininde .uppercover .cov_text p {
     width: 100%;
@@ -90,6 +83,9 @@
   .maininde .uppercover .loginform .loginWrapper {
     width: 100%;
     min-width: initial;
+  }
+  .maininde .get_start_sec .main_get_start {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 410px) {

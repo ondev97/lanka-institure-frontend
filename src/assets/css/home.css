@@ -625,29 +625,31 @@
 /*get start*/
 .maininde .get_start_sec {
   width: 100%;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
 }
 .maininde .get_start_sec .main_get_start {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .maininde .get_start_sec .main_get_start .get_start_column {
-  flex: 0.4;
+  flex: 0.5;
 }
 .maininde .get_start_sec .main_get_start .get_start_column:nth-child(1) {
-  flex: 0.6;
-  padding: 50px 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex: 0.5;
+  padding: 50px 25px 50px 50px;
+  background-color: #f5f5f5;
 }
 .maininde .get_start_sec .main_get_start .get_start_column h1 {
   font-size: 35px;
-  text-align: center;
-  margin-bottom: 45px;
+  text-align: left;
+  margin-bottom: 25px;
   color: var(--h1Fontcolor);
+}
+.maininde .get_start_sec .main_get_start .get_start_column h1 .gold {
+  color: var(--buttonColor1);
 }
 .maininde .get_start_sec .main_get_start .get_start_column .get_row {
   width: 100%;
@@ -703,10 +705,12 @@
   .get_row
   .row_columnt
   p {
-  font-size: 15px;
+  font-size: 18px;
 }
 .maininde .get_start_sec .main_get_start .get_start_column img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   filter: grayscale(32%);
 }
 
@@ -716,14 +720,14 @@
 }
 .simple_card_sec .card_sec_main {
   max-width: 95%;
-  margin: 30px auto;
+  margin: 100px auto;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   grid-gap: 20px;
 }
 .simple_card_sec .card_sec_main .card {
-  flex-basis: 312px;
-  height: 250px;
+  flex: 0.3;
   border: 1px solid #d7e1ff;
   border-radius: 3px;
   padding: 5px;

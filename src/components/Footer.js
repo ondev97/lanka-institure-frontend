@@ -8,7 +8,6 @@ export default function Footer() {
   let location = useLocation().pathname;
   console.log(location);
   if (
-    location === "/" ||
     location === "/stlogin" ||
     location === "/stsignup" ||
     location === "/passwordreset"
@@ -58,13 +57,13 @@ export default function Footer() {
               <Link to="/contact">Contact Us</Link>
             </li> */}
             <li>
-              <Link to="#">Student Guide</Link>
-            </li>
-            <li>
               <Link to="#">All Courses</Link>
             </li>
             <li>
-              <Link to="/allteachers">All Instructors</Link>
+              <Link to="#">Free Courses</Link>
+            </li>
+            <li>
+              <Link to="#">Paid Courses</Link>
             </li>
           </ul>
         </div>

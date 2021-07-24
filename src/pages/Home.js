@@ -9,10 +9,10 @@ import imgSec1 from "../img/1.png";
 import imgSec2 from "../img/2.png";
 import imgSec3 from "../img/3.png";
 import imgSec4 from "../img/4.png";
+import get from "../img/get.jpg";
 import sl from "../img/sl.png";
 import usa from "../img/usa.png";
 import LoginForm from "../components/LoginForm";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -88,6 +88,33 @@ export default function Home() {
             <div className="card_head">
               <img src={imgSec4} alt="card image" />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="get_start_sec">
+        <div className="main_get_start">
+          <div className="get_start_column">
+            <h1>
+              WE ARE <br />
+              <span className="gold">LANKA</span> INSTITUTE
+            </h1>
+            <div className="get_row">
+              <div className="row_columnt">
+                <p>
+                  Millions of people have used LANKA INSTITUTE to decide which
+                  online course to take. We aggregate courses from many
+                  universities to help you find the best courses on almost any
+                  subject, wherever they exist. Our goal is to make online
+                  education work for everyone.
+                </p>
+                <br />
+                <p>LANKA INSTITUTE</p>
+              </div>
+            </div>
+          </div>
+          <div className="get_start_column">
+            <img src={get} alt="get" />
           </div>
         </div>
       </div>
