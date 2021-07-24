@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Redirect, useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import Axios from "axios";
-import { useSelector } from "react-redux";
+
 import StOneModule from "../../components/student/StOneModule";
-import StCourseModuleDes from "../../components/student/StCourseModuleDes";
 import { store } from "react-notifications-component";
 import PlayerController from "../PlayerController";
 import ReactPlayer from "react-player/lazy";
@@ -162,7 +161,7 @@ export default function FreeStmodules() {
           <div className="md_models">
             <div className="cr_models">
               <button onClick={back}>
-                <i className="fas fa-chevron-circle-left"></i>Back to Course
+                <i className="fas fa-chevron-circle-left"></i>Back to Chapters
               </button>
             </div>
             <div className="al_models">
@@ -180,7 +179,7 @@ export default function FreeStmodules() {
                 ))
               ) : (
                 <div className="empy">
-                  <h3>No Course Module Available..</h3>
+                  <h3>No Chapter Module Available..</h3>
                 </div>
               )}
             </div>

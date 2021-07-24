@@ -217,7 +217,7 @@ export default function CourseCard({
                   is_enrolled ? (
                     <Link to={`/studentdashboard/stmodules/${courseid}/`}>
                       <button>
-                        <i className="fas fa-eye"></i>View Course
+                        <i className="fas fa-eye"></i>View Chapter
                       </button>
                     </Link>
                   ) : (
@@ -241,7 +241,7 @@ export default function CourseCard({
                     </>
                   )
                 ) : (
-                  <p className="freezep">Course freezed</p>
+                  <p className="freezep">Chapter freezed</p>
                 )}
               </div>
             </div>

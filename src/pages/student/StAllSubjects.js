@@ -91,25 +91,29 @@ export default function StAllSubjects() {
               name="sClassType"
               onChange={handelSearchSubject}
             >
-              <option value="">Select Class Type</option>
-              <option value="revision">Revision</option>
-              <option value="theory">Theory</option>
-              <option value="Past Revision">Past Revision</option>
-              <option value="paper">Paper</option>
+              <option value="">Select Course Category</option>
+              <option value="G.C.E. ORDINARY LEVEL">
+                G.C.E. ORDINARY LEVEL
+              </option>
+              <option value="G.C.E. ADVANCED LEVEL">
+                G.C.E. ADVANCED LEVEL
+              </option>
+              <option value="HIGHER EDUCATION">HIGHER EDUCATION</option>
+              <option value="OTHERS">OTHERS</option>
             </select>
             <select
               type="text"
               name="sSubjectType"
               onChange={handelSearchSubject}
             >
-              <option value="">Select Subject Type</option>
+              <option value="">Select Course Type</option>
               <option value="free">Free</option>
               <option value="paid">Paid</option>
             </select>
             <input
               type="text"
               name="search"
-              placeholder="Search Subject"
+              placeholder="Search Course"
               onChange={handelSearchSubject}
             />
             <button>

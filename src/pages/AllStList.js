@@ -128,7 +128,7 @@ export default function AllStList() {
       </div>
       <div className="search_st">
         <button onClick={back}>
-          <i className="fas fa-arrow-circle-left"></i> Back to Course
+          <i className="fas fa-arrow-circle-left"></i> Back to Chapter
         </button>
         <div className="search" onChange={handelSearchSubject}>
           <input type="text" />

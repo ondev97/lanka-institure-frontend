@@ -113,7 +113,7 @@ export default function ModelsCourseDescri({ id }) {
               <Link to={`/teacherdashboard/addstudents/${id}`}>
                 <li>
                   <i className="fas fa-caret-right"></i> Add Students For
-                  Courses
+                  Chapters
                 </li>
               </Link>
               <Link to={`/teacherdashboard/viewallst/${id}`}>
@@ -178,12 +178,12 @@ export default function ModelsCourseDescri({ id }) {
               <Link to={`/teacherdashboard/updatecourse/${id}/${cid}`}>
                 <button title="Edit This Course">
                   <i className="fas fa-pencil-alt"></i>
-                  <span>Edit Course</span>
+                  <span>Edit Chapter</span>
                 </button>
               </Link>
               <button title="Delete This Course" onClick={deleteCourse}>
                 <i className="fas fa-trash-alt"></i>
-                <span>Delete Course</span>
+                <span>Delete Chapter</span>
               </button>
             </div>
           </div>

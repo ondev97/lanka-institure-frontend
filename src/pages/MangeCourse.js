@@ -99,7 +99,7 @@ export default function MangeCourse() {
             <img src={courses} alt="student" />
           </div>
           <div className="body_dash">
-            <h1>Courses</h1>
+            <h1>Chapters</h1>
             <h3>{statistics.courses}</h3>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function MangeCourse() {
             <img src={Subjects} alt="student" />
           </div>
           <div className="body_dash">
-            <h1>Subjects</h1>
+            <h1>Courses</h1>
             <h3>{statistics.subjects}</h3>
           </div>
         </div>
@@ -119,14 +119,14 @@ export default function MangeCourse() {
         <div className="course_head">
           <div className="crcs">
             <Link to="/teacherdashboard/createsubject/">
-              <h2>Create Subject</h2>
+              <h2>Create Course</h2>
             </Link>
           </div>
           <div className="search">
             <input
               type="text"
               name="search"
-              placeholder="Search Your Subjects"
+              placeholder="Search Your Courses"
               onChange={handelSearchSubject}
             />
             <button>

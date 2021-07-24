@@ -19,7 +19,6 @@ export default function CourseView() {
   const [courseData, setcourseData] = useState([]);
   const [subData, setsubData] = useState({});
   const [isRedirect, setisRedirect] = useState(false);
-  const [isShowDes, setisShowDes] = useState(false);
   const [isLoading, setisLoading] = useState(true);
   const [page, setpage] = useState(1);
   const [allCourseData, setallCourseData] = useState(null);
@@ -107,15 +106,13 @@ export default function CourseView() {
       <div className="top_manage_course">
         <LazyLoadImage
           src={subData.sub_cover}
-          alt=""
+          alt="subject cover"
           effect="blur"
-          width="100%"
-          height="100%"
-          style={{ opacity: "0.8" }}
         />
         <div className="top_manage_head">
           <h1>{subData.sub_name || ""}</h1>
           <h3>{subData.sub_sdes || ""}</h3>
+          <p>{subData.description}</p>
         </div>
 
         <div className="options_subs">
@@ -125,49 +122,27 @@ export default function CourseView() {
           <div className="options_manage">
             <ul>
               <li onClick={clk}>
-                <i className="far fa-trash-alt"></i> Delete Subject
+                <i className="far fa-trash-alt"></i> Delete Course
               </li>
               <Link to={`/teacherdashboard/updatesubject/${id}`}>
                 <li>
-                  <i className="far fa-edit"></i> Edit Subject
+                  <i className="far fa-edit"></i> Edit Course
                 </li>
               </Link>
             </ul>
           </div>
         </div>
-        {subData.description ? (
-          <motion.div layout className="down">
-            <motion.i
-              layout
-              className={`fas fa-chevron-down ${isShowDes ? "up" : ""}`}
-              onClick={() => setisShowDes(!isShowDes)}
-            ></motion.i>
-          </motion.div>
-        ) : (
-          ""
-        )}
       </div>
-      <motion.div layout>
-        <AnimateSharedLayout>
-          {isShowDes && subData.description ? (
-            <div className="sub_des_show">
-              <p>{subData.description}</p>
-            </div>
-          ) : (
-            ""
-          )}
-        </AnimateSharedLayout>
-      </motion.div>
       <div className="top_manage_body">
         <div className="mange_cos_body">
           <div className="manage_course_nav">
             <Link to="/teacherdashboard/managecourse/">
               <button>
-                <i className="fas fa-chevron-circle-left"></i>Back to Subjects
+                <i className="fas fa-chevron-circle-left"></i>Back to Courses
               </button>
             </Link>
             <Link to={`/teacherdashboard/createcourse/${id}`}>
-              <button>Create Course</button>
+              <button>Create Chapter</button>
             </Link>
           </div>
           <div className="">

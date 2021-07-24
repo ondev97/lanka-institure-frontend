@@ -58,6 +58,7 @@ export default function Stmodules() {
           setredirect(true);
         });
     }
+    window.scrollTo(0, 0);
   }, [usDetails]);
 
   useEffect(() => {
@@ -167,7 +168,7 @@ export default function Stmodules() {
           <div className="md_models">
             <div className="cr_models">
               <button onClick={back}>
-                <i className="fas fa-chevron-circle-left"></i>Back to Course
+                <i className="fas fa-chevron-circle-left"></i>Back to Chapters
               </button>
             </div>
             <div className="al_models">

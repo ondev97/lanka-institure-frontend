@@ -55,101 +55,42 @@ export default function Home() {
           <img src={cov} alt="image" />
         </div>
       </div>
-      <div className="inde_counter">
-        <div className="main_inde_counter">
-          <div className="wr">
-            <div className="counter_colu">
-              <Link to="/freeclasses">
-                <h2>FREE RECORDED COURSES</h2>
-                <div className="img_sec">
-                  <img src={imgSec4} />
-                </div>
-              </Link>
+      <div className="simple_card_sec">
+        <div className="card_sec_main">
+          <div className="card">
+            <div className="card_body">
+              <h1>G.C.E. ORDINARY LEVEL</h1>
             </div>
-            <div className="counter_colu">
-              <Link to="/freeclasses">
-                <h2>FREE LIVE COURSES</h2>
-                <div className="img_sec">
-                  <img src={imgSec2} />
-                </div>
-              </Link>
+            <div className="card_head">
+              <img src={imgSec1} alt="card image" />
             </div>
-            <div className="counter_colu">
-              <h2>PAID RECORDED COURSES</h2>
-              <div className="img_sec">
-                <img src={imgSec3} />
-              </div>
+          </div>
+          <div className="card">
+            <div className="card_body">
+              <h1>G.C.E. ADVANCED LEVEL</h1>
             </div>
-            <div className="counter_colu">
-              <h2>PAID LIVE COURSES</h2>
-              <div className="img_sec">
-                <img src={imgSec1} />
-              </div>
+            <div className="card_head">
+              <img src={imgSec2} alt="card image" />
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_body">
+              <h1>HIGHER EDUCATION</h1>
+            </div>
+            <div className="card_head">
+              <img src={imgSec3} alt="card image" />
+            </div>
+          </div>
+          <div className="card">
+            <div className="card_body">
+              <h1>OTHERS</h1>
+            </div>
+            <div className="card_head">
+              <img src={imgSec4} alt="card image" />
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="inde_counter new-box">
-        <div className="main_inde_counter">
-          <div className="title">
-            <h1>අපි A සාමාර්ථ සොයා උඩුගම් බලා පිහිනන්නෙමු</h1>
-          </div>
-          <div className="wr">
-            <div className="counter_colu">
-              <h2>ඉතිහාසයේ </h2>
-              <img src={first} alt="first" />
-              <h3>
-                Island 1<sup>st</sup> 2<sup>nd</sup> 3<sup>rd</sup>
-              </h3>
-              <h3>
-                District 1<sup>st</sup> 19 ක්
-              </h3>
-            </div>
-            <div className="counter_colu">
-              <h2>මෙවර</h2>
-              <img src={first} alt="first" />
-              <h3>3,7,11 සමග මුල් 25 ට 13ක්</h3>
-              <h3>
-                District 1<sup>st</sup> 5 ක්
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="inde_counter new-box one">
-        <div className="main_inde_counter">
-          <div className="title">
-            <h1>Next Live Class</h1>
-          </div>
-          <div className="wr">
-            <div className="counter_colu">
-              <div className="img_sec">
-                <img src={imgSec1} />
-              </div>
-              <h2>NEXT PAID LIVE CLASS</h2>
-              <h3>Lesson Name :</h3>
-              <h3>Lesson Start Date :</h3>
-              <h3>Lesson Start Time :</h3>
-            </div>
-            <div className="counter_colu">
-              <div className="img_sec">
-                <img src={imgSec2} />
-              </div>
-              <h2>NEXT FREE LIVE CLASS</h2>
-              <h3>Lesson Name :</h3>
-              <h3>Lesson Start Date :</h3>
-              <h3>Lesson Start Time :</h3>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="inde_counter one cont">
-        <div className="main_inde_counter">
-          <div className="title">
-            <h1>Contact Us : 0716588634 / 0705532203</h1>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }

@@ -122,7 +122,7 @@ export default function TcModels() {
             <div className="cr_models">
               <Link to={`/teacherdashboard/viewcourse/${cid}`}>
                 <button>
-                  <i className="fas fa-chevron-circle-left"></i>Back to Courses
+                  <i className="fas fa-chevron-circle-left"></i>Back to Chapters
                 </button>
               </Link>
               <Link to={`/teacherdashboard/createmodels/${id}/${cid}`}>
@@ -148,7 +148,7 @@ export default function TcModels() {
                 ))
               ) : (
                 <div className="empy">
-                  <h3>No Course Modules Available..</h3>
+                  <h3>No Chapter Modules Available..</h3>
                 </div>
               )}
             </div>

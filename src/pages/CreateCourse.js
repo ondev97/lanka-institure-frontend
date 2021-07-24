@@ -143,7 +143,7 @@ export default function CreateCourse() {
     <div className="subject_form">
       <ThreeStepSection set="cc" />
       <div className="main_form">
-        <h1>Create Course</h1>
+        <h1>Create Chapter</h1>
         <CourseCreateForm
           handelSubmit={handelSubmit}
           showCropper={showCropper}

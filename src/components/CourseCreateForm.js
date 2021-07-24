@@ -43,7 +43,7 @@ export default function CourseCreateForm({
     <form onSubmit={handelSubmit}>
       <p>
         <label htmlFor="cn">
-          Course Name <span>(Max 45 Charcters)</span>
+          Chapter Name <span>(Max 45 Charcters)</span>
         </label>
         <input
           type="text"
@@ -60,7 +60,7 @@ export default function CourseCreateForm({
       </p>
       {subjectType.subjectType !== "free" ? (
         <p>
-          <label htmlFor="cp">Course Price</label>
+          <label htmlFor="cp">Chapter Price</label>
           <span className="on_row">
             <span className="curu">LKR</span>
             <input
@@ -83,7 +83,7 @@ export default function CourseCreateForm({
       )}
       <p>
         <label htmlFor="cd">
-          Course Description <span>(Max 300 Characters)</span>
+          Chapter Description <span>(Max 300 Characters)</span>
         </label>
         <textarea
           name="course_description"
@@ -129,7 +129,9 @@ export default function CourseCreateForm({
         )}
         <p>
           <label htmlFor="file">
-            {cropData === "#" ? "Upload Course Cover" : "Changed Course Cover"}
+            {cropData === "#"
+              ? "Upload Chapter Cover"
+              : "Changed Chapter Cover"}
           </label>
           <input
             type="file"
@@ -172,7 +174,7 @@ export default function CourseCreateForm({
           type={`${progress ? "button" : "submit"}`}
           name="create"
         >
-          Create Course{" "}
+          Create Chapter{" "}
           <i
             className={`fas fa-circle-notch notch ${!progress ? "dis" : ""}`}
           ></i>

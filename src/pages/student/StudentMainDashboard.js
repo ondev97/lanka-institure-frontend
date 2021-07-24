@@ -28,6 +28,7 @@ export default function StudentMainDashboard() {
       const fetchurl = `${url}/`;
       getSubjectDetails(fetchurl);
     }
+    window.scrollTo(0, 0);
   }, [usDetails, page, search]);
 
   const getSubjectDetails = async (fetchurl) => {
@@ -63,12 +64,12 @@ export default function StudentMainDashboard() {
     <>
       <div className="all_st_subs">
         <div className="pagetop">
-          <h1>My Subjects</h1>
+          <h1>My Course</h1>
           <div className="search_row">
             <input
               type="text"
               name="search"
-              placeholder="Search Subject"
+              placeholder="Search Courses"
               onChange={handelSearchSubject}
             />
             <button>

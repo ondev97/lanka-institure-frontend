@@ -41,6 +41,11 @@
     margin-bottom: 5px;
   }
 }
+@media screen and (max-width: 650px) {
+  .top_manage_course span {
+    flex: 1;
+  }
+}
 @media screen and (max-width: 550px) {
   .st_top_manage_body .st_mange_cos_body .st_manage_cos_search input {
     width: 100% !important;

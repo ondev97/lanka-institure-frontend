@@ -155,7 +155,7 @@ export default function UpdateCourse() {
         setprogress(false);
         //showing alert
         store.addNotification({
-          title: "Course Updated!",
+          title: "Chapter Updated!",
           message: process.env.REACT_APP_LMS_ALERT_NAME,
           type: "success",
           insert: "top",
@@ -191,11 +191,11 @@ export default function UpdateCourse() {
     <div className="subject_form">
       <div className="back">
         <button onClick={back}>
-          <i className="fas fa-chevron-circle-left"></i>Back to Courses
+          <i className="fas fa-chevron-circle-left"></i>Back to Chapter
         </button>
       </div>
       <div className="main_form">
-        <h1>Update Course</h1>
+        <h1>Update Chapter</h1>
         <UpdateCourseForm
           handelSubmit={handelSubmit}
           showCropper={showCropper}

@@ -96,7 +96,7 @@ export default function AddStudents() {
       }
     ).then(() => {
       store.addNotification({
-        title: `Enrollement Successfully`,
+        title: `Enrollment Successfully`,
         message: process.env.REACT_APP_LMS_ALERT_NAME,
         type: "success",
         insert: "top",
@@ -168,7 +168,7 @@ export default function AddStudents() {
       </div>
       <div className="search_st">
         <button onClick={back}>
-          <i className="fas fa-arrow-circle-left"></i> Back to Course
+          <i className="fas fa-arrow-circle-left"></i> Back to Chapter
         </button>
         <div className="search" onChange={handelSearchSubject}>
           <input type="text" />

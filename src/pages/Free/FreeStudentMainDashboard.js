@@ -63,11 +63,11 @@ export default function FreeStudentMainDashboard() {
       <div className="all_st_subs free_st_sub">
         <div className="cr_models">
           <button onClick={back}>
-            <i className="fas fa-chevron-circle-left"></i>Back to My Subjects
+            <i className="fas fa-chevron-circle-left"></i>Back to My Courses
           </button>
         </div>
         <div className="pagetop">
-          <h1>Free Classes</h1>
+          <h1>Free Courses</h1>
         </div>
         {subDetails.length !== 0 ? (
           <div className="">
@@ -93,7 +93,7 @@ export default function FreeStudentMainDashboard() {
             </InfiniteScroll>
           </div>
         ) : (
-          <Empty target="No Free Class" />
+          <Empty target="No Free Courses" />
         )}
         {isLoading && <ProfileLoader />}
       </div>

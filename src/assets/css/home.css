@@ -15,7 +15,7 @@
 }
 .maininde .uppercover {
   position: relative;
-  min-height: calc(79vh - 93px);
+  min-height: calc(90vh - 93px);
   background-color: var(--background1);
   padding: 0;
   display: flex;
@@ -708,4 +708,43 @@
 .maininde .get_start_sec .main_get_start .get_start_column img {
   width: 100%;
   filter: grayscale(32%);
+}
+
+/*simple card section*/
+.simple_card_sec {
+  width: 100%;
+}
+.simple_card_sec .card_sec_main {
+  max-width: 95%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+}
+.simple_card_sec .card_sec_main .card {
+  flex-basis: 312px;
+  height: 250px;
+  border: 1px solid #d7e1ff;
+  border-radius: 3px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #ecf1ff;
+}
+.simple_card_sec .card_sec_main .card .card_head {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.simple_card_sec .card_sec_main .card .card_head img {
+  width: 100%;
+  object-fit: cover;
+}
+.simple_card_sec .card_sec_main .card .card_body {
+  width: 100%;
+  padding: 10px 0 10px;
+}
+.simple_card_sec .card_sec_main .card .card_body h1 {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
 }

@@ -79,7 +79,7 @@ export default function CreateSubject() {
         //showing alert
         console.log(res);
         store.addNotification({
-          title: "Subject Created!",
+          title: "Course Created!",
           message: process.env.REACT_APP_LMS_ALERT_NAME,
           type: "success",
           insert: "top",
@@ -107,7 +107,7 @@ export default function CreateSubject() {
     <div className="subject_form">
       <ThreeStepSection set="cs" />
       <div className="main_form">
-        <h1>Create Subject</h1>
+        <h1>Create Course</h1>
         <CreateSubjectForm
           formValue={formValue}
           hadelChabgeFormValues={hadelChabgeFormValues}

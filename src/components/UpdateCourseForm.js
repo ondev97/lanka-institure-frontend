@@ -72,7 +72,7 @@ export default function UpdateCourseForm({
   return (
     <form onSubmit={handelSubmit}>
       <p>
-        <label htmlFor="cn">Course Name</label>
+        <label htmlFor="cn">Chapter Name</label>
         <input
           type="text"
           name="course_name"
@@ -88,7 +88,7 @@ export default function UpdateCourseForm({
       </p>
       {subjectType.subjectType !== "free" ? (
         <p>
-          <label htmlFor="cp">Course Price</label>
+          <label htmlFor="cp">Chapter Price</label>
           <span className="on_row">
             <span className="curu">LKR</span>
             <input
@@ -112,7 +112,7 @@ export default function UpdateCourseForm({
         ""
       )}
       <p>
-        <label htmlFor="cd">Course Description</label>
+        <label htmlFor="cd">Chapter Description</label>
         <textarea
           name="course_description"
           id="cd"
@@ -167,7 +167,7 @@ export default function UpdateCourseForm({
           </div>
         )}
         <p>
-          <label htmlFor="file">Changed Course Cover</label>
+          <label htmlFor="file">Changed Chapter Cover</label>
           <input
             type="file"
             name="file"
@@ -193,7 +193,7 @@ export default function UpdateCourseForm({
         </p>
       </div>
       <div className="costtypefr">
-        <label htmlFor="">Course Freeze</label>
+        <label htmlFor="">Chapter Freeze</label>
         <label className="togglefr" htmlFor="myTogglecrezz">
           <input
             ref={isfreeze}
@@ -228,7 +228,7 @@ export default function UpdateCourseForm({
           type={`${progress ? "button" : "submit"}`}
           name="create"
         >
-          Update Course{" "}
+          Update Chapter{" "}
           <i
             className={`fas fa-circle-notch notch ${!progress ? "dis" : ""}`}
           ></i>

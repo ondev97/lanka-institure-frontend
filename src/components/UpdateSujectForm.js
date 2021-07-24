@@ -23,7 +23,7 @@ export default function UpdateSujectForm({
   return (
     <form onSubmit={handelSubmit}>
       <p>
-        <label htmlFor="st">Subject Title</label>
+        <label htmlFor="st">Course Title</label>
         <input
           type="text"
           name="subject_title"
@@ -39,7 +39,7 @@ export default function UpdateSujectForm({
         )}
       </p>
       <p>
-        <label htmlFor="ssd">Subject Short Description</label>
+        <label htmlFor="ssd">Course Short Description</label>
         <input
           type="text"
           name="subject_shdes"
@@ -55,7 +55,7 @@ export default function UpdateSujectForm({
         )}
       </p>
       <p>
-        <label htmlFor="sd">Subject Description</label>
+        <label htmlFor="sd">Course Description</label>
         <textarea
           name="sub_des"
           id="sd"
@@ -106,7 +106,7 @@ export default function UpdateSujectForm({
           </div>
         )}
         <p>
-          <label htmlFor="file">Change Subject Cover</label>
+          <label htmlFor="file">Change Course Cover</label>
           <input
             type="file"
             name="file"
@@ -133,7 +133,7 @@ export default function UpdateSujectForm({
       </div>
       <div className="sub_sect">
         <p>
-          <label htmlFor="ct">Class Type</label>
+          <label htmlFor="ct">Course Category</label>
           <select
             name="class_type"
             id="ct"
@@ -142,12 +142,12 @@ export default function UpdateSujectForm({
             onFocus={hideError}
           >
             <option value="" disabled>
-              Select Class Type
+              Select Course Category
             </option>
-            <option value="revision">Revision</option>
-            <option value="theory">Theory</option>
-            <option value="Past Revision">Past Revision</option>
-            <option value="paper">Paper</option>
+            <option value="G.C.E. ORDINARY LEVEL">G.C.E. ORDINARY LEVEL</option>
+            <option value="G.C.E. ADVANCED LEVEL">G.C.E. ADVANCED LEVEL</option>
+            <option value="HIGHER EDUCATION">HIGHER EDUCATION</option>
+            <option value="OTHERS">OTHERS</option>
           </select>
           {formErrors.class_type && (
             <span className={`tip ${hide.class_type ? "hidetip" : ""}`}>
@@ -156,7 +156,7 @@ export default function UpdateSujectForm({
           )}
         </p>
         <p>
-          <label htmlFor="st">Subject Type</label>
+          <label htmlFor="st">Course Type</label>
           <select
             name="subject_type"
             id="st"
@@ -165,7 +165,7 @@ export default function UpdateSujectForm({
             onFocus={hideError}
           >
             <option value="" disabled>
-              Select Subject Type
+              Select Course Type
             </option>
             <option value="paid">Paid</option>
             <option value="free">Free</option>
@@ -183,7 +183,7 @@ export default function UpdateSujectForm({
           type={`${isUploading ? "button" : "submit"}`}
           name="create"
         >
-          <span>Update Subject</span>{" "}
+          <span>Update Course</span>{" "}
           <i
             className={`fas fa-circle-notch notch ${!isUploading ? "dis" : ""}`}
           ></i>

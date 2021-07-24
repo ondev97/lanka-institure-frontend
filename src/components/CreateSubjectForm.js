@@ -22,7 +22,7 @@ export default function CreateSubjectForm({
     <form onSubmit={handelSubmit}>
       <p>
         <label htmlFor="st">
-          Subject Title <span>(Max 45 Characters)</span>
+          Course Title <span>(Max 45 Characters)</span>
         </label>
         <input
           type="text"
@@ -40,7 +40,7 @@ export default function CreateSubjectForm({
       </p>
       <p>
         <label htmlFor="ssd">
-          Subject Short Description <span>(Max 50 Characters)</span>
+          Course Short Description <span>(Max 50 Characters)</span>
         </label>
         <input
           type="text"
@@ -57,7 +57,7 @@ export default function CreateSubjectForm({
         )}
       </p>
       <p>
-        <label htmlFor="sd">Subject Description</label>
+        <label htmlFor="sd">Course Description</label>
         <textarea
           name="sub_des"
           id="sd"
@@ -102,9 +102,7 @@ export default function CreateSubjectForm({
         )}
         <p>
           <label htmlFor="file">
-            {cropData === "#"
-              ? "Upload Subject Cover"
-              : "Changed Subject Cover"}
+            {cropData === "#" ? "Upload Course Cover" : "Changed Course Cover"}
           </label>
           <input
             type="file"
@@ -126,7 +124,7 @@ export default function CreateSubjectForm({
       </div>
       <div className="sub_sect">
         <p>
-          <label htmlFor="ct">Class Type</label>
+          <label htmlFor="ct">Course Category</label>
           <select
             name="class_type"
             id="ct"
@@ -135,12 +133,12 @@ export default function CreateSubjectForm({
             onFocus={hideError}
           >
             <option value="" disabled>
-              Select Class Type
+              Select Course Category
             </option>
-            <option value="revision">Revision</option>
-            <option value="theory">Theory</option>
-            <option value="Past Revision">Past Revision</option>
-            <option value="paper">Paper</option>
+            <option value="G.C.E. ORDINARY LEVEL">G.C.E. ORDINARY LEVEL</option>
+            <option value="G.C.E. ADVANCED LEVEL">G.C.E. ADVANCED LEVEL</option>
+            <option value="HIGHER EDUCATION">HIGHER EDUCATION</option>
+            <option value="OTHERS">OTHERS</option>
           </select>
           {formErrors.class_type && (
             <span className={`tip ${hide.class_type ? "hidetip" : ""}`}>
@@ -149,7 +147,7 @@ export default function CreateSubjectForm({
           )}
         </p>
         <p>
-          <label htmlFor="st">Subject Type</label>
+          <label htmlFor="st">Course Type</label>
           <select
             name="subject_type"
             id="st"
@@ -158,7 +156,7 @@ export default function CreateSubjectForm({
             onFocus={hideError}
           >
             <option value="" disabled>
-              Select Subject Type
+              Select Course Type
             </option>
             <option value="paid">Paid</option>
             <option value="free">Free</option>
@@ -176,7 +174,7 @@ export default function CreateSubjectForm({
           type={`${uploading ? "button" : "submit"}`}
           name="create"
         >
-          <span>Create Subject</span>{" "}
+          <span>Create Course</span>{" "}
           <i
             className={`fas fa-circle-notch notch ${!uploading ? "dis" : ""}`}
           ></i>
