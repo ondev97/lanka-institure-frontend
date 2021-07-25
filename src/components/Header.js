@@ -9,6 +9,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Header({ acDetails }) {
   const [isham, setisham] = useState(false);
+  const [path, setpath] = useState("");
   const profileDetails = ProfileDetails(acDetails);
 
   const mobnavani = {
@@ -21,21 +22,20 @@ export default function Header({ acDetails }) {
       transition: { duration: 1, ease: "easeIn" },
     },
   };
-
   const mainRoute = [
     "/",
-    "/about",
-    "/contact",
-    "/allteachers",
-    "/allsubjects",
-    "/stlogin",
-    "/stsignup",
-    "/passwordreset",
-    "/guidelines",
-    "/features",
-    "/freeclasses",
-    "/freesubcources",
-    "/freemodule",
+    "about",
+    "contact",
+    "allteachers",
+    "allsubjects",
+    "stlogin",
+    "stsignup",
+    "passwordreset",
+    "guidelines",
+    "features",
+    "freeclasses",
+    "freesubcources",
+    "freemodule",
   ];
 
   const hambutton = () => {
@@ -47,6 +47,12 @@ export default function Header({ acDetails }) {
   useEffect(() => {
     if (isham) {
       setisham(!isham);
+    }
+    if (pathname !== "/") {
+      let pathArr = pathname.split("/");
+      setpath(pathArr[1]);
+    } else {
+      setpath("/");
     }
   }, [pathname]);
 
@@ -107,7 +113,7 @@ export default function Header({ acDetails }) {
     }
   };
 
-  if (mainRoute.includes(pathname)) {
+  if (mainRoute.includes(path)) {
     return (
       <>
         <nav>

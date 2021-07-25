@@ -33,7 +33,6 @@ export default function FreeStudentMainDashboard() {
     setisLoading(true);
     await Axios.get(fetchurl, {})
       .then((res) => {
-        console.log(res);
         setisLoading(false);
         setsubDetails([...res.data]);
       })
