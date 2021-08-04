@@ -6,6 +6,7 @@ import LazyLoad from "react-lazyload";
 import ReactPlayer from "react-player/lazy";
 import { useSelector } from "react-redux";
 import ModuleBody from "./ModuleBody";
+import UPlayerComponent from "./UPlayerComponent";
 
 export default function TcOneModel({
   name,
@@ -17,26 +18,8 @@ export default function TcOneModel({
   setvideoLink,
   setsetVideo,
 }) {
-  const [playing, setplaying] = useState(false);
   //get acDetails from Redux Store
   const usDetails = useSelector((state) => state.accountDetails);
-  //console.log(msg);
-  const playPush = (e) => {
-    if (e.target.className.includes("player_overlay")) {
-      if (playing) {
-        setplaying(false);
-      } else {
-        setplaying(true);
-      }
-    }
-  };
-
-  const play = (link) => {
-    setplaying(true);
-    setvideoLink(link);
-    setsetVideo(true);
-    setplaying(false);
-  };
 
   //filtering message and embed react player
   function filterTags(nodes) {
@@ -57,27 +40,10 @@ export default function TcOneModel({
                 if (nodes[i].props.children[x].props.url.includes("youtu")) {
                   media.push(
                     <div className="re_player" id="re_player" key={i}>
-                      <div className="player_overlay" onClick={playPush}></div>
-                      <ReactPlayer
+                      <UPlayerComponent
                         url={nodes[i].props.children[x].props.url}
-                        controls={true}
-                        pip={true}
-                        className="player"
-                        width="100%"
-                        height="100%"
-                        muted={true}
-                        playing={playing}
-                        onPlay={() =>
-                          play(nodes[i].props.children[x].props.url)
-                        }
-                        config={{
-                          youtube: {
-                            playerVars: {
-                              modestbranding: 1,
-                              fs: 0,
-                            },
-                          },
-                        }}
+                        setvideoLink={setvideoLink}
+                        setsetVideo={setsetVideo}
                       />
                     </div>
                   );
