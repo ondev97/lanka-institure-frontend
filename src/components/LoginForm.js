@@ -88,8 +88,9 @@ function LoginForm() {
             </p>
             <div className="butSec">
               <button>Login</button>
-              <Link to="/passwordreset"></Link>
-              <p>Forget Password</p>
+              <Link to="/passwordreset">
+                <p>Forget Password</p>
+              </Link>
             </div>
           </form>
         </div>
