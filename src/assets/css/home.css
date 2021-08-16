@@ -132,6 +132,10 @@
   border-radius: 8px;
   border: 1px solid transparent;
 }
+.maininde .uppercover .loginform .loginWrapper .butSec a {
+  text-decoration: none;
+  color: #fff;
+}
 .maininde .uppercover .loginform .loginWrapper .butSec p {
   font-size: 13px;
   cursor: pointer;
